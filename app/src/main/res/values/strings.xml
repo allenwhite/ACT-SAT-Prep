@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ACT / SAT Prep</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sat_or_act">sat_or_act</string>
+    <string name="title_activity_did_choose_test">did_choose_test</string>
+
+    //login
+
+    <string name="welcomeText">Welcome to Be Your Dreams\' ACT / SAT Prep!  </string>
+    <string name="submitText">Let\'s Go!</string>
+
+    //sat_or_act
+
+    <string name="chooseTest">What test are you preparing for?</string>
+    <string name="chooseACT">ACT</string>
+    <string name="chooseSAT">SAT</string>
+
+
+
+    //did_choose_test
+    <string name="postTest1">Where To Go For Help</string>
+    <string name="postTest2">Tips to Improve Score</string>
+    <string name="postTest3">About the Test</string>
+    <string name="postTest4">Private Coaching</string>
+    <string name="title_activity_swipeable">swipeable</string>
+
+
+</resources>

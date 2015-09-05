@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.actsat.alpal.actsatprep" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sat_or_act"
+            android:label="@string/title_activity_sat_or_act"
+            android:parentActivityName=".login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.actsat.alpal.actsatprep.login" />
+        </activity>
+        <activity
+            android:name=".did_choose_test"
+            android:label="@string/title_activity_did_choose_test"
+            android:parentActivityName=".sat_or_act" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.actsat.alpal.actsatprep.sat_or_act" />
+        </activity>
+        <activity
+            android:name=".swipeable"
+            android:label="@string/title_activity_swipeable"
+            android:parentActivityName=".did_choose_test" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.actsat.alpal.actsatprep.did_choose_test" />
+        </activity>
+    </application>
+
+</manifest>
