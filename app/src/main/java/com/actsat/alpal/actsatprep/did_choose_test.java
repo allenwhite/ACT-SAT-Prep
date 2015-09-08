@@ -1,16 +1,58 @@
 package com.actsat.alpal.actsatprep;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class did_choose_test extends AppCompatActivity {
 
+    private Button button1, button2, button3, button4;
+    private String act = "ACT", sat = "SAT";
+    private String getHelp1         = "getHelp";
+    private String improveScore2    = "improveScore";
+    private String aboutTheTest3    = "aboutTheTest";
+    private String privateCoaching4 = "privateCoaching";
+    public String testChosen;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_did_choose_test);
+        Intent intent = getIntent();
+        testChosen = intent.getStringExtra("testChosen");
+
+        //where to go for help
+        button1 = (Button) findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                goToSwipeable(getHelp1);
+            }
+        });
+        //tips to improve score
+        button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                goToSwipeable(improveScore2);
+            }
+        });
+        //about the test
+        button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                goToSwipeable(aboutTheTest3);
+            }
+        });
+        //private coaching
+        button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                goToSwipeable(privateCoaching4);
+            }
+        });
+
     }
 
     @Override
@@ -33,5 +75,11 @@ public class did_choose_test extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void goToSwipeable(String whatWasClicked){
+        Intent myIntent = new Intent(did_choose_test.this, swipeable.class);
+        myIntent.putExtra("infoChosen", whatWasClicked);
+        did_choose_test.this.startActivity(myIntent);
     }
 }

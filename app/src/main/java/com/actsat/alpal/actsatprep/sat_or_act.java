@@ -1,16 +1,33 @@
 package com.actsat.alpal.actsatprep;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class sat_or_act extends AppCompatActivity {
 
+    private Button chooseACT, chooseSAT;
+    private String act = "ACT", sat = "SAT";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sat_or_act);
+        chooseACT = (Button)findViewById(R.id.chooseACT);
+        chooseACT.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                goToChoseTest(act);
+            }
+        });
+        chooseSAT = (Button)findViewById(R.id.chooseSAT);
+        chooseSAT.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                goToChoseTest(sat);
+            }
+        });
     }
 
     @Override
@@ -33,5 +50,13 @@ public class sat_or_act extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void goToChoseTest(String test){
+
+        Intent myIntent = new Intent(sat_or_act.this, did_choose_test.class);
+        myIntent.putExtra("testChosen", test);
+        sat_or_act.this.startActivity(myIntent);
+
     }
 }

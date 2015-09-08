@@ -1,16 +1,36 @@
 package com.actsat.alpal.actsatprep;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class login extends AppCompatActivity {
 
+    private EditText nameInput, ageInput, gradeInput, schoolInput, ethnicityInput, email_twitterInput;
+    private Button submitButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        nameInput = (EditText) findViewById(R.id.nameInput);
+        ageInput = (EditText) findViewById(R.id.ageInput);
+        gradeInput = (EditText) findViewById(R.id.gradeInput);
+        schoolInput = (EditText) findViewById(R.id.schoolInput);
+        ethnicityInput = (EditText) findViewById(R.id.ethnicityInput);
+        email_twitterInput = (EditText) findViewById(R.id.emailTwitterInput);
+        submitButton = (Button) findViewById(R.id.submitButton);
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                validateInput();
+            }
+        });
     }
 
     @Override
@@ -33,5 +53,32 @@ public class login extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void validateInput(){
+        if (nameInput.getText().toString().equals("") ||
+                ageInput.getText().toString().equals("") ||
+                gradeInput.getText().toString().equals("") ||
+                schoolInput.getText().toString().equals("") ){
+//            fill all da stuff out
+
+        }else {
+            try{
+                int age = Integer.parseInt( ageInput.getText().toString() );
+            }catch (NumberFormatException e){
+                //this aint no fukkin number
+            }
+            submitData();
+            advanceToTests();
+        }
+    }
+
+    private void submitData(){
+
+    }
+
+    private void advanceToTests(){
+        Intent myIntent = new Intent(login.this, sat_or_act.class);
+        login.this.startActivity(myIntent);
     }
 }
