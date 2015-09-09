@@ -7,6 +7,7 @@
     tools:context="com.actsat.alpal.actsatprep.sat_or_act">
 
     <TextView
+        android:id="@+id/whichTestLabel"
         android:text="@string/chooseTest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,6 +16,7 @@
 
     <Button
         android:id="@+id/chooseACT"
+        android:layout_below="@+id/whichTestLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/chooseACT"
@@ -25,6 +27,7 @@
 
     <Button
         android:id="@+id/chooseSAT"
+        android:layout_below="@id/chooseACT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/chooseSAT"
