@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class login extends AppCompatActivity {
 
@@ -61,12 +62,16 @@ public class login extends AppCompatActivity {
                 gradeInput.getText().toString().equals("") ||
                 schoolInput.getText().toString().equals("") ){
 //            fill all da stuff out
+            Toast.makeText(getApplicationContext(), "Please fill out all the required fields!",
+                    Toast.LENGTH_LONG).show();
 
         }else {
             try{
                 int age = Integer.parseInt( ageInput.getText().toString() );
             }catch (NumberFormatException e){
-                //this aint no fukkin number
+                Toast.makeText(getApplicationContext(), "Your age must be a number!",
+                        Toast.LENGTH_LONG).show();
+                return;
             }
             submitData();
             advanceToTests();
