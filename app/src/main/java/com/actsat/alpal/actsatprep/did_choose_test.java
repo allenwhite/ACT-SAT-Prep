@@ -21,9 +21,10 @@ public class did_choose_test extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_did_choose_test);
+
         Intent intent = getIntent();
         testChosen = intent.getStringExtra("testChosen");
-
+        setTitle(testChosen);
         //where to go for help
         button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +81,7 @@ public class did_choose_test extends AppCompatActivity {
     private void goToSwipeable(String whatWasClicked){
         Intent myIntent = new Intent(did_choose_test.this, swipeable.class);
         myIntent.putExtra("infoChosen", whatWasClicked);
+        myIntent.putExtra("testChosen", testChosen);
         did_choose_test.this.startActivity(myIntent);
     }
 }

@@ -1,14 +1,15 @@
 package com.actsat.alpal.actsatprep;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class login extends AppCompatActivity {
@@ -19,12 +20,61 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setTitle("Check in");
         nameInput = (EditText) findViewById(R.id.nameInput);
+        nameInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(!hasFocus){
+                    hideKeyboard();
+                }
+            }
+        });
         ageInput = (EditText) findViewById(R.id.ageInput);
+        ageInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(!hasFocus){
+                    hideKeyboard();
+                }
+            }
+        });
         gradeInput = (EditText) findViewById(R.id.gradeInput);
+        gradeInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(!hasFocus){
+                    hideKeyboard();
+                }
+            }
+        });
         schoolInput = (EditText) findViewById(R.id.schoolInput);
+        schoolInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(!hasFocus){
+                    hideKeyboard();
+                }
+            }
+        });
         ethnicityInput = (EditText) findViewById(R.id.ethnicityInput);
+        ethnicityInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(!hasFocus){
+                    hideKeyboard();
+                }
+            }
+        });
         email_twitterInput = (EditText) findViewById(R.id.emailTwitterInput);
+        email_twitterInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(!hasFocus){
+                    hideKeyboard();
+                }
+            }
+        });
         submitButton = (Button) findViewById(R.id.submitButton);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
@@ -85,5 +135,15 @@ public class login extends AppCompatActivity {
     private void advanceToTests(){
         Intent myIntent = new Intent(login.this, sat_or_act.class);
         login.this.startActivity(myIntent);
+    }
+
+    private void hideKeyboard() {
+        InputMethodManager imm = (InputMethodManager)getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(nameInput.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(ageInput.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(schoolInput.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(gradeInput.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(ethnicityInput.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(email_twitterInput.getWindowToken(), 0);
     }
 }

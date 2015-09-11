@@ -16,6 +16,7 @@ public class sat_or_act extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sat_or_act);
+        setTitle("Choose a Test");
         chooseACT = (Button)findViewById(R.id.chooseACT);
         chooseACT.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -28,6 +29,7 @@ public class sat_or_act extends AppCompatActivity {
                 goToChoseTest(sat);
             }
         });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
     }
 
     @Override

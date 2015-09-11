@@ -1,5 +1,6 @@
 package com.actsat.alpal.actsatprep;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -22,7 +23,7 @@ public class swipeable extends AppCompatActivity {
 
     DemoCollectionPagerAdapter mDemoCollectionPagerAdapter;
     ViewPager mViewPager;
-
+    String prevButtonTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,23 @@ public class swipeable extends AppCompatActivity {
         setContentView(R.layout.activity_swipeable);
         // ViewPager and its adapters use support library
         // fragments, so use getSupportFragmentManager.
+        String getHelp1         = "getHelp";
+        String improveScore2    = "improveScore";
+        String aboutTheTest3    = "aboutTheTest";
+        String privateCoaching4 = "privateCoaching";
+
+        Intent intent = getIntent();
+        prevButtonTitle = intent.getStringExtra("infoChosen");
+        if (prevButtonTitle.equals(getHelp1)){
+            setTitle("Where To Go For Help");
+        }else if (prevButtonTitle.equals(improveScore2)){
+            setTitle("Tips to Improve Your Score");
+        }else if (prevButtonTitle.equals(aboutTheTest3)){
+            setTitle("About the Test");
+        }else if (prevButtonTitle.equals(privateCoaching4)){
+            setTitle("Private Coaching");
+        }
+
         mDemoCollectionPagerAdapter =
                 new DemoCollectionPagerAdapter(
                         getSupportFragmentManager());
