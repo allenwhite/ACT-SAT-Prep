@@ -3,6 +3,7 @@ package com.actsat.alpal.actsatprep;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,13 +16,11 @@ public class did_choose_test extends AppCompatActivity {
     private String getHelp1         = "getHelp";
     private String improveScore2    = "improveScore";
     private String aboutTheTest3    = "aboutTheTest";
-    private String privateCoaching4 = "privateCoaching";
     public String testChosen;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_did_choose_test);
-
         Intent intent = getIntent();
         testChosen = intent.getStringExtra("testChosen");
         setTitle(testChosen);
@@ -46,13 +45,7 @@ public class did_choose_test extends AppCompatActivity {
                 goToSwipeable(aboutTheTest3);
             }
         });
-        //private coaching
-        button4 = (Button) findViewById(R.id.button4);
-        button4.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                goToSwipeable(privateCoaching4);
-            }
-        });
+
 
     }
 

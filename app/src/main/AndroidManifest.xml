@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/CustomActionBarTheme" >
         <activity
             android:name=".login"
             android:label="@string/app_name" >
@@ -19,7 +19,7 @@
         <activity
             android:name=".sat_or_act"
             android:label="@string/title_activity_sat_or_act"
-            android:parentActivityName=".login" >
+            android:parentActivityName="com.actsat.alpal.actsatprep.login" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actsat.alpal.actsatprep.login" />
@@ -27,7 +27,7 @@
         <activity
             android:name=".did_choose_test"
             android:label="@string/title_activity_did_choose_test"
-            android:parentActivityName=".sat_or_act" >
+            android:parentActivityName="com.actsat.alpal.actsatprep.sat_or_act" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actsat.alpal.actsatprep.sat_or_act" />
@@ -35,7 +35,7 @@
         <activity
             android:name=".swipeable"
             android:label="@string/title_activity_swipeable"
-            android:parentActivityName=".did_choose_test" >
+            android:parentActivityName="com.actsat.alpal.actsatprep.did_choose_test" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actsat.alpal.actsatprep.did_choose_test" />

@@ -1,7 +1,11 @@
 package com.actsat.alpal.actsatprep;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,71 +14,34 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 public class login extends AppCompatActivity {
 
     private EditText nameInput, ageInput, gradeInput, schoolInput, ethnicityInput, email_twitterInput;
     private Button submitButton;
+    private RelativeLayout backgroundView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         setTitle("Check in");
+        backgroundView = (RelativeLayout) findViewById(R.id.backgroundView);
+        backgroundView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    hideKeyboard();
+                }
+            }
+        });
         nameInput = (EditText) findViewById(R.id.nameInput);
-        nameInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus){
-                    hideKeyboard();
-                }
-            }
-        });
         ageInput = (EditText) findViewById(R.id.ageInput);
-        ageInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus){
-                    hideKeyboard();
-                }
-            }
-        });
         gradeInput = (EditText) findViewById(R.id.gradeInput);
-        gradeInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus){
-                    hideKeyboard();
-                }
-            }
-        });
         schoolInput = (EditText) findViewById(R.id.schoolInput);
-        schoolInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus){
-                    hideKeyboard();
-                }
-            }
-        });
         ethnicityInput = (EditText) findViewById(R.id.ethnicityInput);
-        ethnicityInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus){
-                    hideKeyboard();
-                }
-            }
-        });
         email_twitterInput = (EditText) findViewById(R.id.emailTwitterInput);
-        email_twitterInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus){
-                    hideKeyboard();
-                }
-            }
-        });
         submitButton = (Button) findViewById(R.id.submitButton);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
