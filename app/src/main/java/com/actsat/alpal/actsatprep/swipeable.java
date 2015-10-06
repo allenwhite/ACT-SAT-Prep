@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -21,7 +22,6 @@ import java.util.ArrayList;
 
 
 public class swipeable extends AppCompatActivity {
-
 
     String getHelp1         = "getHelp";
     String improveScore2    = "improveScore";
@@ -100,6 +100,9 @@ public class swipeable extends AppCompatActivity {
                     R.layout.fragment_collection_object, container, false);
             Bundle args = getArguments();
             ((TextView) rootView.findViewById(android.R.id.text1)).setText(args.getString("text"));
+
+            ((TextView) rootView.findViewById(android.R.id.text1)).setMovementMethod(LinkMovementMethod.getInstance());
+            //??????????????
             return rootView;
         }
     }
