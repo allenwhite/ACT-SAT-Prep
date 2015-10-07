@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 public class login extends AppCompatActivity {
 
-    private EditText nameInput, ageInput, gradeInput, schoolInput, ethnicityInput, email_twitterInput;
+    private EditText nameInput, ageInput, gradeInput, schoolInput, emailOrInstagramInput, twitterInput;
     private Button submitButton;
     private RelativeLayout backgroundView;
     @Override
@@ -40,8 +40,8 @@ public class login extends AppCompatActivity {
         ageInput = (EditText) findViewById(R.id.ageInput);
         gradeInput = (EditText) findViewById(R.id.gradeInput);
         schoolInput = (EditText) findViewById(R.id.schoolInput);
-        ethnicityInput = (EditText) findViewById(R.id.ethnicityInput);
-        email_twitterInput = (EditText) findViewById(R.id.emailTwitterInput);
+        emailOrInstagramInput = (EditText) findViewById(R.id.emailOrInstagramInput);
+        twitterInput = (EditText) findViewById(R.id.twitterInput);
         submitButton = (Button) findViewById(R.id.submitButton);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
@@ -74,25 +74,27 @@ public class login extends AppCompatActivity {
     }
 
     private void validateInput(){
-        if (nameInput.getText().toString().equals("") ||
-                ageInput.getText().toString().equals("") ||
-                gradeInput.getText().toString().equals("") ||
-                schoolInput.getText().toString().equals("") ){
-//            fill all da stuff out
-            Toast.makeText(getApplicationContext(), "Please fill out all the required fields!",
-                    Toast.LENGTH_LONG).show();
-
-        }else {
-            try{
-                int age = Integer.parseInt( ageInput.getText().toString() );
-            }catch (NumberFormatException e){
-                Toast.makeText(getApplicationContext(), "Your age must be a number!",
-                        Toast.LENGTH_LONG).show();
-                return;
-            }
-            submitData();
-            advanceToTests();
-        }
+        advanceToTests();
+//
+//        if (nameInput.getText().toString().equals("") ||
+//                ageInput.getText().toString().equals("") ||
+//                gradeInput.getText().toString().equals("") ||
+//                schoolInput.getText().toString().equals("") ){
+////            fill all da stuff out
+//            Toast.makeText(getApplicationContext(), "Please fill out all the required fields!",
+//                    Toast.LENGTH_LONG).show();
+//
+//        }else {
+//            try{
+//                int age = Integer.parseInt( ageInput.getText().toString() );
+//            }catch (NumberFormatException e){
+//                Toast.makeText(getApplicationContext(), "Your age must be a number!",
+//                        Toast.LENGTH_LONG).show();
+//                return;
+//            }
+//            submitData();
+//            advanceToTests();
+//        }
     }
 
     private void submitData(){
@@ -110,7 +112,7 @@ public class login extends AppCompatActivity {
         imm.hideSoftInputFromWindow(ageInput.getWindowToken(), 0);
         imm.hideSoftInputFromWindow(schoolInput.getWindowToken(), 0);
         imm.hideSoftInputFromWindow(gradeInput.getWindowToken(), 0);
-        imm.hideSoftInputFromWindow(ethnicityInput.getWindowToken(), 0);
-        imm.hideSoftInputFromWindow(email_twitterInput.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(emailOrInstagramInput.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(twitterInput.getWindowToken(), 0);
     }
 }

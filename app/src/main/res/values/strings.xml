@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#FFFFFF</color>
     <color name="bydgreen">#87CB36</color>
@@ -33,10 +34,10 @@
     <!-- where to go for help -->
     <string name="whereToGetHelp1">Be Your Dreams, LLC assists high school students with college preparation so they can attend the college of their choice, pursue their desired career, and avoid student loans.</string>
     <string name="whereToGetHelp2">We offer one-on-one and small group study sessions to high school students by offering services that focus on Improving GPA, Choosing A Major, Choosing A College, Improving OGT, ACT, or SAT scores, and Applying for Scholarships.</string>
-    <string name="whereToGetHelp3">If you would like personal assistance with preparing for the ACT or SAT please contact us with the following information:\nWeb: <a href="www.beyourdreams.org">BeYourDreams.org</a>\n<a href="mailto:beyourdreams@ymail.com">Email</a>\nTwitter: @beyourdreamsllc</string>
+    <string name="whereToGetHelp3">If you would like personal assistance with preparing for the ACT or SAT please contact us with the following information:\n<b>Web:</b> <a href="http://www.beyourdreams.org">BeYourDreams.org</a>\n<b>Email:</b> <a href="mailto:beyourdreams@ymail.com">beyourdreams@ymail.com</a>\n<b>Twitter:</b> @beyourdreamsllc</string>
     //act
-    <string name="whereToGetHelp4">ACT Practice Tests:\nwww.actstudent.org/sampletest\n1. Full length test divided by subject\n2. Explanations for each incorrect and correct answer</string>
-    <string name="whereToGetHelp5">http://www.princetonreview.com/college/free-act-practice-test\n1. Option to take self-paced test online\n2. Option to be tested in person at central location</string>
+    <string name="whereToGetHelp4">ACT Practice Tests:\n<a href="http://www.actstudent.org/sampletest">ACT Student</a>\n1. Full length test divided by subject\n2. Explanations for each incorrect and correct answer</string>
+    <string name="whereToGetHelp5"><a href="http://www.princetonreview.com/college/free-act-practice-test">Princeton Review</a>\n1. Option to take self-paced test online\n2. Option to be tested in person at central location</string>
     <string name="whereToGetHelp6">1267c Practice Test Booklet\n1. Ask guidance counselor for a printed copy\n2. <a href="mailto:beyourdreams@ymail.com">Email</a> Be Your Dreams for an online version</string>
     //sat
     <string name="whereToGetHelp7">SAT Practice Tests:\n1.  Sign up for free account\n2.  Watch video tutorials on each practice test question\n\n<a href="https://www.khanacademy.org/sat">Khan Acadmeny</a></string>
@@ -58,18 +59,18 @@
     <string name="tips10">5. If you do not reach the minimum score set by the exam administrators, thoroughly review and understand the notes you took on the incorrect answers first before you retake the test according to the required time.</string>
     <string name="tips11">Contact Be Your Dreams for affordable sessions that walk you through the questions you got incorrect for better understanding</string>
     <string name="tips12">Or Ask your High School teacher/Tutor of that particular subject of the test to walk you through answering the questions you got incorrect for better understanding</string>
-    //sat
-    <string name="tips13">https://sat.collegeboard.org/practice\n1. Write down each question that you do not understand or have trouble with as you take the practice test</string>
-    <string name="tips14">2. After completing the test, go to <a href="khanacademy.org/sat">Khan Academy</a> to watch the video on those questions\n3. Take notes of the explanations as you watch the video for each question</string>
-    <string name="tips15">4. review and understand your notes for each question\n5. Retake the print version of the practice test for best results\n<a href="princetonreview.com">Princeton Review</a></string>
-    <string name="tips16">Princeton Review provides a copy of your score report for both the online and in person practice tests.\nThe score report consists of each question you got correct and incorrect</string>
+    <!--//sat  -->
+    <string name="tips13"><a href="https://sat.collegeboard.org/practice">College Board</a>\n1. Write down each question that you do not understand or have trouble with as you take the practice test</string>
+    <string name="tips14">2. After completing the test, go to <a href="http://khanacademy.org/sat">Khan Academy</a> to watch the video on those questions\n3. Take notes of the explanations as you watch the video for each question</string>
+    <string name="tips15">4. review and understand your notes for each question\n5. Retake the print version of the practice test for best results</string>
+    <string name="tips16"><a href="http://princetonreview.com">Princeton Review</a>\nPrinceton Review provides a copy of your score report for both the online and in person practice tests.\nThe score report consists of each question you got correct and incorrect</string>
     <string name="tips17">Contact Be Your Dreams for affordable sessions that walk you through the questions you got incorrect for better understanding</string>
     <string name="tips18"> Or Ask your High School teacher/Tutor of that particular subject of the test to walk you through answering the questions you got incorrect for better understanding\nThen retake the Princeton Review in person practice test for best results.</string>
 
 
     <!-- about the test -->
     //act
-    <string name="aboot1">ACT\n\nThe ACT consists of Four required sections:\nEnglish\nMath\nReading\nScience\nAnd an optional Writing section.</string>
+    <string name="aboot1"><b>ACT</b>\n\nThe ACT consists of Four required sections:\nEnglish\nMath\nReading\nScience\nAnd an optional Writing section.</string>
     <string name="aboot2">The English test has 75 questions to complete in 45 minutes\nYou need a minimum score of 18 to be considered college ready.</string>
     <string name="aboot3">The Math test consists of 60 questions in 60 minutes\nYou need a minimum score of 22 to be college ready.</string>
     <string name="aboot4">The Reading test consists of 40 questions in 35 minutes\nYou need a minimum score of 22 to be considered college ready.</string>
@@ -79,18 +80,17 @@
     <string name="aboot8">The highest possible score for the ACT is a 36.\nThe national average composite score for the ACT is a 21.\nThe total time for the ACT test is 3 hours and 45 minutes.</string>
     <string name="aboot9">For more information about what the ACT test consists of visit:\n<a href="http://www.actstudent.org/testprep/descriptions/">ACTStudent.org</a></string>
     //sat
-    <string name="aboot10">SAT\n\nCurrently the SAT test consists of three sections:\nMath\nCritical Reading\nWriting</string>
+    <string name="aboot10"><b>SAT</b>\n\nCurrently the SAT test consists of three sections:\nMath\nCritical Reading\nWriting</string>
     <string name="aboot11">Math is made up of three separate sections equal to 70 minutes in time\nIt ranges from a score of 200 to 800.\nThe average Math score is 513.</string>
     <string name="aboot12">Critical Reading is made up of three separate sections equal to 45 minutes in time\nIt ranges from a score of 200 to 800.\nThe average Critical Reading score is 497.</string>
     <string name="aboot13">Writing skills is made up of one essay equal to 25 minutes in time; two grammar sections equal to 35 minutes, and an experimental section equal to 25 minutes</string>
     <string name="aboot14">Writing scores range from 200 to 800.\nThe average Writing Skills score is 487.</string>
     <string name="aboot15">The highest possible score for the SAT is a 2400.\nThe total time for the SAT test with the writing section is 3 hours and 45 minutes.\nThe total time for the SAT test without the writing section is 3 hours and 20 minutes.</string>
-    <string name="aboot16">The SAT test will be redesigned for the graduating class of 2017. The new test dates are as follows:\nMarch 2016\nMay 2016\nJune 2016</string>
+    <string name="aboot16">The SAT test will be redesigned for the graduating class of 2017. The new test dates are as follows:\n\nMarch 2016\nMay 2016\nJune 2016</string>
     <string name="aboot17">The Redesigned SAT taken by high school juniors in 2016 will consist of two sections:\nMath and Evidence-Based Reading and Writing</string>
     <string name="aboot18">The Math consists of one 55 minute section with a calculator and one 20 minute section with no calculator.\nIt ranges from a score of 200 to 800.</string>
     <string name="aboot19">The Evidence-Based Reading and Writing portion will consist of one 65 minute reading section, one 35 minute Writing and Language section, and one Optional 50 minute essay.\nIt ranges from a score of 200 to 800.</string>
     <string name="aboot20">The highest possible score for the Redesigned SAT is a 1600.\nThe total time for the Redesigned SAT with the essay is 3 hours and 50 minutes.\nThe total time for the Redesigned SAT without the essay is 3 hours.</string>
     <string name="aboot21">For more information about what the SAT test consists of visit:\n<a href="https://www.testmasters.net/SatAbout">Test Masters</a>\nAnd\n<a href="http://www.princetonreview.com/college/sat-information">Princeton Review</a></string>
-
 
 </resources>

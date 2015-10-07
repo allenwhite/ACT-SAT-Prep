@@ -30,7 +30,7 @@ public class swipeable extends AppCompatActivity {
     DemoCollectionPagerAdapter mDemoCollectionPagerAdapter;
     ViewPager mViewPager;
     String prevButtonTitle, testChosen;
-    ArrayList<String> swipeStrings;
+    ArrayList<CharSequence> swipeStrings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +44,8 @@ public class swipeable extends AppCompatActivity {
         prevButtonTitle = intent.getStringExtra("infoChosen");
         testChosen = intent.getStringExtra("testChosen");
 
-        swipeStrings = new ArrayList<String>();
+        swipeStrings = new ArrayList<CharSequence>();
         populateWithCorrectData();
-
-
 
         mDemoCollectionPagerAdapter =
                 new DemoCollectionPagerAdapter(
@@ -67,7 +65,7 @@ public class swipeable extends AppCompatActivity {
         public Fragment getItem(int i) {
             Fragment fragment = new DemoObjectFragment();
             Bundle args = new Bundle();
-            args.putString("text", swipeStrings.get(i));
+            args.putCharSequence("text", swipeStrings.get(i));
 
             // Our object is just an integer :-P
             args.putInt(DemoObjectFragment.ARG_OBJECT, i + 1);
@@ -99,10 +97,9 @@ public class swipeable extends AppCompatActivity {
             View rootView = inflater.inflate(
                     R.layout.fragment_collection_object, container, false);
             Bundle args = getArguments();
-            ((TextView) rootView.findViewById(android.R.id.text1)).setText(args.getString("text"));
+            ((TextView) rootView.findViewById(android.R.id.text1)).setText(args.getCharSequence("text"));
 
             ((TextView) rootView.findViewById(android.R.id.text1)).setMovementMethod(LinkMovementMethod.getInstance());
-            //??????????????
             return rootView;
         }
     }
@@ -135,66 +132,66 @@ public class swipeable extends AppCompatActivity {
     private void populateWithCorrectData() {
         if (prevButtonTitle.equals(getHelp1)){
             setTitle("Where To Go For Help");
-            swipeStrings.add(getResources().getString(R.string.whereToGetHelp1));
-            swipeStrings.add(getResources().getString(R.string.whereToGetHelp2));
-            swipeStrings.add(getResources().getString(R.string.whereToGetHelp3));
+            swipeStrings.add(getResources().getText(R.string.whereToGetHelp1));
+            swipeStrings.add(getResources().getText(R.string.whereToGetHelp2));
+            swipeStrings.add(getResources().getText(R.string.whereToGetHelp3));
             if (testChosen.equals("SAT")){
-                swipeStrings.add(getResources().getString(R.string.whereToGetHelp7));
-                swipeStrings.add(getResources().getString(R.string.whereToGetHelp8));
-                swipeStrings.add(getResources().getString(R.string.whereToGetHelp9));
+                swipeStrings.add(getResources().getText(R.string.whereToGetHelp7));
+                swipeStrings.add(getResources().getText(R.string.whereToGetHelp8));
+                swipeStrings.add(getResources().getText(R.string.whereToGetHelp9));
             }else{
-                swipeStrings.add(getResources().getString(R.string.whereToGetHelp4));
-                swipeStrings.add(getResources().getString(R.string.whereToGetHelp5));
-                swipeStrings.add(getResources().getString(R.string.whereToGetHelp6));
+                swipeStrings.add(getResources().getText(R.string.whereToGetHelp4));
+                swipeStrings.add(getResources().getText(R.string.whereToGetHelp5));
+                swipeStrings.add(getResources().getText(R.string.whereToGetHelp6));
             }
         }else if (prevButtonTitle.equals(improveScore2)){
             setTitle("Tips to Improve Your Score");
             if (testChosen.equals("SAT")){
-                swipeStrings.add(getResources().getString(R.string.tips13));
-                swipeStrings.add(getResources().getString(R.string.tips14));
-                swipeStrings.add(getResources().getString(R.string.tips15));
-                swipeStrings.add(getResources().getString(R.string.tips16));
-                swipeStrings.add(getResources().getString(R.string.tips17));
-                swipeStrings.add(getResources().getString(R.string.tips18));
+                swipeStrings.add(getResources().getText(R.string.tips13));
+                swipeStrings.add(getResources().getText(R.string.tips14));
+                swipeStrings.add(getResources().getText(R.string.tips15));
+                swipeStrings.add(getResources().getText(R.string.tips16));
+                swipeStrings.add(getResources().getText(R.string.tips17));
+                swipeStrings.add(getResources().getText(R.string.tips18));
             }else {
-                swipeStrings.add(getResources().getString(R.string.tips1));
-                swipeStrings.add(getResources().getString(R.string.tips2));
-                swipeStrings.add(getResources().getString(R.string.tips3));
-                swipeStrings.add(getResources().getString(R.string.tips4));
-                swipeStrings.add(getResources().getString(R.string.tips5));
-                swipeStrings.add(getResources().getString(R.string.tips6));
-                swipeStrings.add(getResources().getString(R.string.tips7));
-                swipeStrings.add(getResources().getString(R.string.tips8));
-                swipeStrings.add(getResources().getString(R.string.tips9));
-                swipeStrings.add(getResources().getString(R.string.tips10));
-                swipeStrings.add(getResources().getString(R.string.tips11));
-                swipeStrings.add(getResources().getString(R.string.tips12));
+                swipeStrings.add(getResources().getText(R.string.tips1));
+                swipeStrings.add(getResources().getText(R.string.tips2));
+                swipeStrings.add(getResources().getText(R.string.tips3));
+                swipeStrings.add(getResources().getText(R.string.tips4));
+                swipeStrings.add(getResources().getText(R.string.tips5));
+                swipeStrings.add(getResources().getText(R.string.tips6));
+                swipeStrings.add(getResources().getText(R.string.tips7));
+                swipeStrings.add(getResources().getText(R.string.tips8));
+                swipeStrings.add(getResources().getText(R.string.tips9));
+                swipeStrings.add(getResources().getText(R.string.tips10));
+                swipeStrings.add(getResources().getText(R.string.tips11));
+                swipeStrings.add(getResources().getText(R.string.tips12));
             }
         }else if (prevButtonTitle.equals(aboutTheTest3)){
             setTitle("About the Test");
             if (testChosen.equals("SAT")) {
-                swipeStrings.add(getResources().getString(R.string.aboot10));
-                swipeStrings.add(getResources().getString(R.string.aboot11));
-                swipeStrings.add(getResources().getString(R.string.aboot12));
-                swipeStrings.add(getResources().getString(R.string.aboot13));
-                swipeStrings.add(getResources().getString(R.string.aboot14));
-                swipeStrings.add(getResources().getString(R.string.aboot15));
-                swipeStrings.add(getResources().getString(R.string.aboot16));
-                swipeStrings.add(getResources().getString(R.string.aboot17));
-                swipeStrings.add(getResources().getString(R.string.aboot18));
-                swipeStrings.add(getResources().getString(R.string.aboot19));
-                swipeStrings.add(getResources().getString(R.string.aboot20));
-                swipeStrings.add(getResources().getString(R.string.aboot21));
+                swipeStrings.add(getResources().getText(R.string.aboot10));
+                swipeStrings.add(getResources().getText(R.string.aboot11));
+                swipeStrings.add(getResources().getText(R.string.aboot12));
+                swipeStrings.add(getResources().getText(R.string.aboot13));
+                swipeStrings.add(getResources().getText(R.string.aboot14));
+                swipeStrings.add(getResources().getText(R.string.aboot15));
+                swipeStrings.add(getResources().getText(R.string.aboot16));
+                swipeStrings.add(getResources().getText(R.string.aboot17));
+                swipeStrings.add(getResources().getText(R.string.aboot18));
+                swipeStrings.add(getResources().getText(R.string.aboot19));
+                swipeStrings.add(getResources().getText(R.string.aboot20));
+                swipeStrings.add(getResources().getText(R.string.aboot21));
             }else {
-                swipeStrings.add(getResources().getString(R.string.aboot1));
-                swipeStrings.add(getResources().getString(R.string.aboot2));
-                swipeStrings.add(getResources().getString(R.string.aboot3));
-                swipeStrings.add(getResources().getString(R.string.aboot4));
-                swipeStrings.add(getResources().getString(R.string.aboot5));
-                swipeStrings.add(getResources().getString(R.string.aboot6));
-                swipeStrings.add(getResources().getString(R.string.aboot7));
-                swipeStrings.add(getResources().getString(R.string.aboot8));
-                swipeStrings.add(getResources().getString(R.string.aboot9));
+                swipeStrings.add(getResources().getText(R.string.aboot1));
+                swipeStrings.add(getResources().getText(R.string.aboot2));
+                swipeStrings.add(getResources().getText(R.string.aboot3));
+                swipeStrings.add(getResources().getText(R.string.aboot4));
+                swipeStrings.add(getResources().getText(R.string.aboot5));
+                swipeStrings.add(getResources().getText(R.string.aboot6));
+                swipeStrings.add(getResources().getText(R.string.aboot7));
+                swipeStrings.add(getResources().getText(R.string.aboot8));
+                swipeStrings.add(getResources().getText(R.string.aboot9));
             }
         }
     }

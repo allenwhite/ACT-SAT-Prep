@@ -16,7 +16,7 @@
             android:id="@+id/backgroundView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/bydgreen"
+            android:background="@color/white"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_vertical_margin"
@@ -29,7 +29,8 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textSize="24sp"
-                android:textColor="@color/white"
+                android:textColor="@color/bydgreen"
+                android:textStyle="bold"
                 />
 
             <ImageView
@@ -48,8 +49,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/bydblue"
+                android:textColorHint="@color/bydblue"
                 android:hint="Name"
                 />
             <EditText
@@ -59,8 +60,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/bydblue"
+                android:textColorHint="@color/bydblue"
                 android:hint="Age"
                 />
             <EditText
@@ -70,8 +71,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/bydblue"
+                android:textColorHint="@color/bydblue"
                 android:hint="Grade"
                 />
             <EditText
@@ -80,8 +81,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/bydblue"
+                android:textColorHint="@color/bydblue"
                 android:hint="Name of School"
                 />
             <EditText
@@ -90,8 +91,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/bydblue"
+                android:textColorHint="@color/bydblue"
                 android:hint="Twitter Handle (optional)"
                 />
             <EditText
@@ -100,8 +101,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/bydblue"
+                android:textColorHint="@color/bydblue"
                 android:hint="Email or Instagram (optional)"
                 />
             <Button
