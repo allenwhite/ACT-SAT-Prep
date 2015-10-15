@@ -36,33 +36,33 @@
     <string name="whereToGetHelp2">We offer one-on-one and small group study sessions to high school students by offering services that focus on Improving GPA, Choosing A Major, Choosing A College, Improving OGT, ACT, or SAT scores, and Applying for Scholarships.</string>
     <string name="whereToGetHelp3">If you would like personal assistance with preparing for the ACT or SAT please contact us with the following information:\n<b>Web:</b> <a href="http://www.beyourdreams.org">BeYourDreams.org</a>\n<b>Email:</b> <a href="mailto:beyourdreams@ymail.com">beyourdreams@ymail.com</a>\n<b>Twitter:</b> @beyourdreamsllc</string>
     //act
-    <string name="whereToGetHelp4">ACT Practice Tests:\n<a href="http://www.actstudent.org/sampletest">ACT Student</a>\n1. Full length test divided by subject\n2. Explanations for each incorrect and correct answer</string>
-    <string name="whereToGetHelp5"><a href="http://www.princetonreview.com/college/free-act-practice-test">Princeton Review</a>\n1. Option to take self-paced test online\n2. Option to be tested in person at central location</string>
-    <string name="whereToGetHelp6">1267c Practice Test Booklet\n1. Ask guidance counselor for a printed copy\n2. <a href="mailto:beyourdreams@ymail.com">Email</a> Be Your Dreams for an online version</string>
+    <string name="whereToGetHelp4">ACT Practice Tests:\n<a href="http://www.actstudent.org/sampletest">ACT Student</a>\n1) Full length test divided by subject\n2) Explanations for each incorrect and correct answer</string>
+    <string name="whereToGetHelp5"><a href="http://www.princetonreview.com/college/free-act-practice-test">Princeton Review</a>\n1) Option to take self-paced test online\n2) Option to be tested in person at central location</string>
+    <string name="whereToGetHelp6">1267c Practice Test Booklet\n1) Ask guidance counselor for a printed copy\n2) <a href="mailto:beyourdreams@ymail.com">Email</a> Be Your Dreams for an online version</string>
     //sat
-    <string name="whereToGetHelp7">SAT Practice Tests:\n1.  Sign up for free account\n2.  Watch video tutorials on each practice test question\n\n<a href="https://www.khanacademy.org/sat">Khan Acadmeny</a></string>
-    <string name="whereToGetHelp8">1. Full length test\n2. Option for online or print test\n3. Option to download Study Guide\n4. Ability to Score the test yourself after completing test\n5. Same questions covered in Khan academy videos\n\n<a href="https://sat.collegeboard.org/practice/sat-practice-test">College Board</a></string>
-    <string name="whereToGetHelp9">1. Option to take self-paced test online\n2. Option to be tested in person at central location\n\n<a href="http://www.princetonreview.com/college/free-sat-practice-test">Princeton Review</a></string>
+    <string name="whereToGetHelp7">SAT Practice Tests:\n1)  Sign up for free account\n2)  Watch video tutorials on each practice test question\n\n<a href="https://www.khanacademy.org/sat">Khan Acadmeny</a></string>
+    <string name="whereToGetHelp8">1) Full length test\n2) Option for online or print test\n3) Option to download Study Guide\n4) Ability to Score the test yourself after completing test\n5) Same questions covered in Khan academy videos\n\n<a href="https://sat.collegeboard.org/practice/sat-practice-test">College Board</a></string>
+    <string name="whereToGetHelp9">1) Option to take self-paced test online\n2) Option to be tested in person at central location\n\n<a href="http://www.princetonreview.com/college/free-sat-practice-test">Princeton Review</a></string>
 
 
 <!-- tips to improve score -->
     //act
     <string name="tips1">During each section of the practice test it is important to take it subject by subject, untimed, and have a notebook and pencil handy for notes on questions you get wrong.\nFor Example: take only the English test without time and in one sitting</string>
-    <string name="tips2">1. Click your choice for the answer on each question\n2. Write the number of the questions you don\'t get correct (i.e. Passage 3 Question 5)</string>
-    <string name="tips3">3. Read and understand the pop up of the explanation of why it is incorrect and answer the question again.\n4. When you get the question correct, take notes on the pop up that explains the correct answer.</string>
-    <string name="tips4">5. Once you have completed the practice test on ACT.org for one subject (i.e. English), Do Not move on to the next subject</string>
-    <string name="tips5">6. Keep the notes you took handy for after you determine your score.</string>
-    <string name="tips6">Scoring the Test\n1. Score the test by determining the number of questions you got correct and understood on your first attempt at answering (just subtract the total number of questions you got wrong from the number of questions all together)</string>
-    <string name="tips7">2. Then divide the number of questions you got correct by the total number of questions (For example: I got 57 questions right. There are 75 total questions. So 56 divided by 75 is 0.76.</string>
-    <string name="tips8">3. Then multiply that number by 36. The answer you get is your score.  The score should be between 1 &amp; 36. (For example: 36 multiplied by 0.76 is 27.)</string>
-    <string name="tips9">4. Now retake the same test according to the required time and repeat steps</string>
-    <string name="tips10">5. If you do not reach the minimum score set by the exam administrators, thoroughly review and understand the notes you took on the incorrect answers first before you retake the test according to the required time.</string>
+    <string name="tips2">1) Click your choice for the answer on each question\n2) Write the number of the questions you don\'t get correct (i.e. Passage 3 Question 5)</string>
+    <string name="tips3">3) Read and understand the pop up of the explanation of why it is incorrect and answer the question again.\n4) When you get the question correct, take notes on the pop up that explains the correct answer.</string>
+    <string name="tips4">5) Once you have completed the practice test on ACT.org for one subject (i.e. English), Do Not move on to the next subject</string>
+    <string name="tips5">6) Keep the notes you took handy for after you determine your score.</string>
+    <string name="tips6">Scoring the Test\n1) Score the test by determining the number of questions you got correct and understood on your first attempt at answering (just subtract the total number of questions you got wrong from the number of questions all together)</string>
+    <string name="tips7">2) Then divide the number of questions you got correct by the total number of questions (For example: I got 57 questions right. There are 75 total questions. So 56 divided by 75 is 0.76.</string>
+    <string name="tips8">3) Then multiply that number by 36. The answer you get is your score.  The score should be between 1 &amp; 36. (For example: 36 multiplied by 0.76 is 27.)</string>
+    <string name="tips9">4) Now retake the same test according to the required time and repeat steps</string>
+    <string name="tips10">5) If you do not reach the minimum score set by the exam administrators, thoroughly review and understand the notes you took on the incorrect answers first before you retake the test according to the required time.</string>
     <string name="tips11">Contact Be Your Dreams for affordable sessions that walk you through the questions you got incorrect for better understanding</string>
     <string name="tips12">Or Ask your High School teacher/Tutor of that particular subject of the test to walk you through answering the questions you got incorrect for better understanding</string>
     <!--//sat  -->
-    <string name="tips13"><a href="https://sat.collegeboard.org/practice">College Board</a>\n1. Write down each question that you do not understand or have trouble with as you take the practice test</string>
-    <string name="tips14">2. After completing the test, go to <a href="http://khanacademy.org/sat">Khan Academy</a> to watch the video on those questions\n3. Take notes of the explanations as you watch the video for each question</string>
-    <string name="tips15">4. review and understand your notes for each question\n5. Retake the print version of the practice test for best results</string>
+    <string name="tips13"><a href="https://sat.collegeboard.org/practice">College Board</a>\n1) Write down each question that you do not understand or have trouble with as you take the practice test</string>
+    <string name="tips14">2) After completing the test, go to <a href="http://khanacademy.org/sat">Khan Academy</a> to watch the video on those questions\n3) Take notes of the explanations as you watch the video for each question</string>
+    <string name="tips15">4) review and understand your notes for each question\n5) Retake the print version of the practice test for best results</string>
     <string name="tips16"><a href="http://princetonreview.com">Princeton Review</a>\nPrinceton Review provides a copy of your score report for both the online and in person practice tests.\nThe score report consists of each question you got correct and incorrect</string>
     <string name="tips17">Contact Be Your Dreams for affordable sessions that walk you through the questions you got incorrect for better understanding</string>
     <string name="tips18"> Or Ask your High School teacher/Tutor of that particular subject of the test to walk you through answering the questions you got incorrect for better understanding\nThen retake the Princeton Review in person practice test for best results.</string>
