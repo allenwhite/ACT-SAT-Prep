@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.viewpagerindicator.TitlePageIndicator;
+import com.viewpagerindicator.LinePageIndicator;
 
 import java.util.ArrayList;
 
@@ -52,6 +52,11 @@ public class swipeable extends AppCompatActivity {
                         getSupportFragmentManager());
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mDemoCollectionPagerAdapter);
+
+
+//Bind the title indicator to the adapter
+        LinePageIndicator titleIndicator = (LinePageIndicator)findViewById(R.id.titles);
+        titleIndicator.setViewPager(mViewPager);
     }
 
     // Since this is an object collection, use a FragmentStatePagerAdapter,
@@ -132,7 +137,6 @@ public class swipeable extends AppCompatActivity {
     private void populateWithCorrectData() {
         if (prevButtonTitle.equals(getHelp1)){
             setTitle("Where To Go For Help");
-            swipeStrings.add(getResources().getText(R.string.whereToGetHelp1));
             swipeStrings.add(getResources().getText(R.string.whereToGetHelp2));
             swipeStrings.add(getResources().getText(R.string.whereToGetHelp3));
             if (testChosen.equals("SAT")){
