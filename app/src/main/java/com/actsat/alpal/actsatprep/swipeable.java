@@ -137,6 +137,7 @@ public class swipeable extends AppCompatActivity {
     private void populateWithCorrectData() {
         if (prevButtonTitle.equals(getHelp1)){
             setTitle("Where To Go For Help");
+            swipeStrings.add(getResources().getText(R.string.whereToGetHelp1));
             swipeStrings.add(getResources().getText(R.string.whereToGetHelp2));
             swipeStrings.add(getResources().getText(R.string.whereToGetHelp3));
             if (testChosen.equals("SAT")){
@@ -156,7 +157,6 @@ public class swipeable extends AppCompatActivity {
                 swipeStrings.add(getResources().getText(R.string.tips15));
                 swipeStrings.add(getResources().getText(R.string.tips16));
                 swipeStrings.add(getResources().getText(R.string.tips17));
-                swipeStrings.add(getResources().getText(R.string.tips18));
             }else {
                 swipeStrings.add(getResources().getText(R.string.tips1));
                 swipeStrings.add(getResources().getText(R.string.tips2));

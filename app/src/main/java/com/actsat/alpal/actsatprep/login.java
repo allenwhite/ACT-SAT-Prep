@@ -23,7 +23,7 @@ import com.parse.ParseObject;
 
 public class login extends AppCompatActivity {
 
-    private EditText nameInput, ageInput, gradeInput, schoolInput, emailOrInstagramInput, twitterInput;
+    private EditText nameInput, ageInput, gradeInput, schoolInput, twitterOrInstagramInput, emailInput;
     private Button submitButton;
     private RelativeLayout backgroundView;
     @Override
@@ -57,8 +57,8 @@ public class login extends AppCompatActivity {
             ageInput = (EditText) findViewById(R.id.ageInput);
             gradeInput = (EditText) findViewById(R.id.gradeInput);
             schoolInput = (EditText) findViewById(R.id.schoolInput);
-            emailOrInstagramInput = (EditText) findViewById(R.id.emailOrInstagramInput);
-            twitterInput = (EditText) findViewById(R.id.twitterInput);
+            twitterOrInstagramInput = (EditText) findViewById(R.id.twitterOrInstagramInput);
+            emailInput = (EditText) findViewById(R.id.emailInput);
             submitButton = (Button) findViewById(R.id.submitButton);
 
             submitButton.setOnClickListener(new View.OnClickListener() {
@@ -102,7 +102,7 @@ public class login extends AppCompatActivity {
 //            fill all da stuff out
             Toast.makeText(getApplicationContext(), "Please fill out all the required fields!",
                     Toast.LENGTH_LONG).show();
-
+            return;
         }else {
             try{
                 int age = Integer.parseInt( ageInput.getText().toString() );
@@ -111,6 +111,13 @@ public class login extends AppCompatActivity {
                         Toast.LENGTH_LONG).show();
                 return;
             }
+
+            if (emailInput.getText().toString().equals("") && twitterOrInstagramInput.getText().toString().equals("")){
+                Toast.makeText(getApplicationContext(), "Please provide an email or social media handle",
+                        Toast.LENGTH_LONG).show();
+                return;
+            }
+
             submitData();
             SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPref.edit();
@@ -123,12 +130,12 @@ public class login extends AppCompatActivity {
 
     private void submitData(){
         ParseObject userObject = new ParseObject("UserObject");
-        userObject.put("name",              nameInput.getText().toString());
-        userObject.put("age",               ageInput.getText().toString());
-        userObject.put("grade",             gradeInput.getText().toString());
-        userObject.put("school",            schoolInput.getText().toString());
-        userObject.put("email_or_instagram",emailOrInstagramInput.getText().toString());
-        userObject.put("twitter",           twitterInput.getText().toString());
+        userObject.put("name",                  nameInput.getText().toString());
+        userObject.put("age",                   ageInput.getText().toString());
+        userObject.put("grade",                 gradeInput.getText().toString());
+        userObject.put("school",                schoolInput.getText().toString());
+        userObject.put("twitter_or_instagram",  twitterOrInstagramInput.getText().toString());
+        userObject.put("email",                 emailInput.getText().toString());
 
         userObject.saveInBackground();
     }
@@ -144,7 +151,7 @@ public class login extends AppCompatActivity {
         imm.hideSoftInputFromWindow(ageInput.getWindowToken(), 0);
         imm.hideSoftInputFromWindow(schoolInput.getWindowToken(), 0);
         imm.hideSoftInputFromWindow(gradeInput.getWindowToken(), 0);
-        imm.hideSoftInputFromWindow(emailOrInstagramInput.getWindowToken(), 0);
-        imm.hideSoftInputFromWindow(twitterInput.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(twitterOrInstagramInput.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(emailInput.getWindowToken(), 0);
     }
 }

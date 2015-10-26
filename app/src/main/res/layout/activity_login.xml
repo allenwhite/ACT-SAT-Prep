@@ -86,28 +86,28 @@
                 android:hint="Name of School"
                 />
             <EditText
-                android:id="@+id/twitterInput"
+                android:id="@+id/emailInput"
                 android:layout_below="@+id/schoolInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:textColor="@color/bydblue"
                 android:textColorHint="@color/bydblue"
-                android:hint="Twitter Handle (optional)"
+                android:hint="Email"
                 />
             <EditText
-                android:id="@+id/emailOrInstagramInput"
-                android:layout_below="@+id/twitterInput"
+                android:id="@+id/twitterOrInstagramInput"
+                android:layout_below="@+id/emailInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_vertical_margin"
                 android:textColor="@color/bydblue"
                 android:textColorHint="@color/bydblue"
-                android:hint="Email or Instagram (optional)"
+                android:hint="Twitter or Instagram"
                 />
             <Button
                 android:id="@+id/submitButton"
-                android:layout_below="@+id/emailOrInstagramInput"
+                android:layout_below="@+id/twitterOrInstagramInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_vertical_margin"
