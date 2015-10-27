@@ -32,13 +32,13 @@
     <string name="title_activity_swipeable">swipeable</string>
 
     <!-- where to go for help -->
-    <string name="whereToGetHelp1"><a href="http://www.beyourdreams.org">beYourDreams.org</a> \n\n <a href="http://www.actstudent.org/sampletest">ACT.org</a> \n\n <a href="http://www.princetonreview.com/college/free-sat-practice-test">Princeton Review</a> \n\n <a href="https://www.khanacademy.org/sat">Khan Academy</a></string>
-    <string name="whereToGetHelp2">Small group study sessions may help you prepare for the test. Our tutors will help you understand the questions on the practice test and can provide personal assistance to prepare.\n\n<a href="http://www.beyourdreams.org">BeYourDreams.org</a></string>
-    <string name="whereToGetHelp3">Contact Be Your Dreams for more information on our ACT prep sessions.\n\n<b>Web:</b>\n<a href="http://www.beyourdreams.org">BeYourDreams.org</a>\n<b>Email:</b> <a href="mailto:beyourdreams@ymail.com">beyourdreams@ymail.com</a>\n<b>Twitter:</b>\n@beyourdreamsllc</string>
+    <string name="whereToGetHelp1"><a href="http://www.beyourdreams.org">beyourdreams.org</a> \n\n <a href="http://www.actstudent.org/sampletest">ACT.org</a> \n\n <a href="http://www.princetonreview.com/college/free-sat-practice-test">Princeton Review</a> \n\n <a href="https://www.khanacademy.org/sat">Khan Academy</a></string>
+    <string name="whereToGetHelp2">Our tutors will help you understand the questions on the practice test and can provide personal assistance to help you prepare.\n\n<a href="http://www.beyourdreams.org">beyourdreams.org</a></string>
+    <string name="whereToGetHelp3">Contact Be Your Dreams for more information on our ACT prep sessions.\n\n<b>Web:</b>\n<a href="http://www.beyourdreams.org">beyourdreams.org</a>\n<b>Email:</b> <a href="mailto:beyourdreams@ymail.com">beyourdreams@ymail.com</a>\n<b>Twitter:</b>\n@beyourdreamsllc</string>
     //act
     <string name="whereToGetHelp4"><a href="http://www.actstudent.org/sampletest">ACT.org</a>\n\nACT Practice Tests:\n\n1) Full length test divided by subject\n\n2) Explanations for each answer</string>
     <string name="whereToGetHelp5"><a href="http://www.princetonreview.com/college/free-act-practice-test">Princeton Review</a>\n\n1) Option to take self-paced test online\n\n2) Option to be tested in person at central location</string>
-    <string name="whereToGetHelp6">Act Practice Test Booklet\n\n1) Ask guidance counselor for a printed copy\n\n2) <a href="mailto:beyourdreams@ymail.com">Email</a> Be Your Dreams for an online version.</string>
+    <string name="whereToGetHelp6"><a href="http://www.act.org/aap/pdf/Preparing-for-the-ACT.pdf">Act Practice Test Booklet</a>\n\n1) Ask guidance counselor for a printed copy\n\n2) <a href="mailto:beyourdreams@ymail.com">Email</a> Be Your Dreams for an online version.</string>
     //sat
     <string name="whereToGetHelp7"><a href="https://www.khanacademy.org/sat">Khan Academy</a>\n\nSAT Practice Tests:\n\n1)  Sign up for free account.\n\n2)  Watch video tutorials on each practice test question.</string>
     <string name="whereToGetHelp8"><a href="https://sat.collegeboard.org/practice/sat-practice-test">SAT.org</a>\n\n1) Full length test\n\n2) Option for online or print test\n\n3) Option to download Study Guide\n\n4) Ability to Score the test yourself after completing test\n\n5) Same questions covered in Khan academy videos</string>
